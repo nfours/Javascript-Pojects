@@ -1,0 +1,26 @@
+@import 'styleguide';
+@import 'mixin';
+@import 'partials/header/header';
+@import 'partials/navigation/navigation';
+@import 'partials/footer/footer';
+
+.push {
+  position: absolute;
+  transition: left .3s;
+  bottom: 0;
+//  height: 100%;
+//  min-height: 100vh;
+  right: 0;
+  top: 1px;
+  width: 100%;
+
+  &.pushed {
+
+  }
+}
+.popup-header {
+  display: none;
+}
+.popup-footer {
+  display: none;
+}

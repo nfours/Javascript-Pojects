@@ -1,0 +1,21 @@
+body {
+  &.inner-page {
+    header{
+      color: $white;
+      position: relative;
+      height: 79px;
+      background-image: url("../images/search-bar.png");
+      @include border(0 0 2px 0,$kelly-green,solid);
+     > div {
+       width: 100%;
+       @include verticle-center();
+     }
+     .header-right{
+       padding: 5px 0 0 0;
+     }
+    }
+  }
+}
+
+
+

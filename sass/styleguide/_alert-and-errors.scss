@@ -1,0 +1,55 @@
+// _alert.scss
+.messages{
+  width: 100%;
+  position: relative;
+  margin-bottom: 30px;
+  display: none;
+  float: left;
+  .content {
+    background-size: 40px !important;
+    background-position: 10px 10px !important;
+    margin: 0px 75px 0 75px;
+    @include border(1px, $cadmium-red, solid);
+    padding: 16px 60px;
+    position: absolute;
+  }
+  h3 {
+    font-family: 'GothamHTF-Medium';
+  }
+  ul{
+    list-style: disc;
+    margin-left: 16px;
+    margin-top: 3px;
+    li{
+      font-family: 'GothamHTF-Book';
+      line-height: 1.2;
+    }
+  }
+
+  &.error-alert {
+    .content {
+      background: url("../images/icons/error.svg") no-repeat $carousel-pink;
+      h3 {
+        color: $cadmium-red;
+      }
+      ul {
+        li {
+          color: $cadmium-red;
+        }
+      }
+    }
+  }
+}
+//error input
+.error-field {
+  font-family: 'GothamHTF-Medium';
+  background-color: $carousel-pink !important;
+  color: $cadmium-red !important;
+  @include border(1px, $cadmium-red, solid);
+  +.icon {
+    &.icon-shadow {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
+}

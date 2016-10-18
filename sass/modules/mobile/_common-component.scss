@@ -1,0 +1,45 @@
+// common-components.scss
+.popup-header {
+  width: 100%;
+  font-family: 'GothamHTF-Light';
+  background-color: $white;
+  color: $dark-jungle-green;
+  z-index: 101;
+  position: fixed;
+  padding: 15px 10px 8px 8px;
+  @include border(0 0 1px 0, #ececec, solid);
+  .component-title {
+    font-size: 16px;
+  }
+  .btn-close {
+    float: right;
+    padding: 10px;
+    position: relative;
+    margin-right: 5px;
+    .icon-close {
+      width: 10px;
+      height: 10px;
+      right: 5px;
+    }
+  }
+}
+.popup-footer {
+  width: 100%;
+  z-index: 101;
+  position: fixed;
+  bottom: 0;
+  background-color: $white;
+  @include border(1px 0 0 0, #999999, solid);
+  padding:  15px 10px 15px 8px;
+  .btn {
+    width: 45%;
+    min-width: 135px;
+    min-height: 40px;
+    font-family: 'GothamHTF-Medium';
+    &.btn-primary {
+      @include  primary-button($kelly-green,$white,$lime-green);
+      margin-left: 8px;
+      float: right;
+    }
+  }
+}

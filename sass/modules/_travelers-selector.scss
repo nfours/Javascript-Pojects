@@ -1,0 +1,112 @@
+// traveler-selector.scss
+.dropDown-wrapper {
+  .dropDown-pannel {
+    width: 100%;
+    background-color: $desert-storm-light-gray;
+    @include box-shadow;
+    @include borderRadius(5px);
+    &:after,
+    &:before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: 12px;
+      border-left: 15px solid transparent;
+      border-right: 15px solid transparent;
+      border-bottom: 20px solid $desert-storm-light-gray;
+      position: absolute;
+      top: -15px;
+    }
+    .controll-panel {
+      padding: 0 25px 10px 30px;
+      .row {
+        margin-bottom: 12px;
+        .label {
+          padding: 10px 0 10px 0;
+          .caption {
+            font-family: 'GothamHTF-Medium';
+            font-weight: $medium;
+            font-size: 19px;
+          }
+        }
+        .dd-row-wrapper {
+          float: right;
+          .btn {
+            width: 35px;
+            height: 35px;
+            background-color: $cararra-gray;
+            min-height: inherit;
+            min-width: inherit;
+            @include borderRadius(0px);
+            color: $mountain-mist-gray;
+            font-size: 25px;
+            padding: 0;
+          }
+          .txt {
+            input {
+              font-family: 'GothamHTF-Light';
+              font-size: 20px;
+              @include border(1px, $iron-gray, solid);
+              text-align: center;
+              min-height: 36px;
+            }
+          }
+        }
+      }
+    }
+    .dd-option-wrapper {
+      width: 100%;
+      @include inline-flex;
+      padding: 10px 15px 10px 30px;
+      .dd-label {
+        width: 45%;
+        color: $zeus-black;
+        font-family: 'GothamHTF-Medium';
+        font-size: 19px;
+        padding: 20px 10px 0 0;
+      }
+      .ui-selectmenu-button {
+        background-color: $white;
+        @include borderRadius(2px);
+        width: 55% !important;
+        font-family: 'GothamHTF-Book';
+        color: $black;
+        @include border(1px, $gainsboro-gray-lighter , solid);
+        margin-top: 10px;
+        font-size: 20px;
+        &:focus, &:active {
+          @include border(2px, $kelly-green, solid);
+          background-color: $alice-blue !important;
+          @include box-shadow;
+          .ui-selectmenu-text {
+            padding: 7px 29px 7px 9px;
+          }
+        }
+        .ui-icon {
+          &.ui-icon-triangle-1-s {
+            width: 40px;
+            height: 40px;
+            background: url("../images/icons/dropdown-arrow.svg");
+            position: absolute;
+            position: absolute;
+            top: 50%;
+            -webkit-transform: translateY(-30%);
+            -ms-transform: translateY(-30%);
+            transform: translateY(-30%);
+            right: 0;
+          }
+        }
+        .ui-selectmenu-text {
+          padding: 8px 30px 8px 10px;
+          font-size: 16px;
+        }
+      }
+    }
+    .dd-btn-Warpper {
+      display: none;
+    }
+  }
+}
+
+

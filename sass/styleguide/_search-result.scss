@@ -1,0 +1,355 @@
+// _search-result.scss
+.flight-process {
+  position: fixed;
+  top: 28px;
+  width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  li {
+    position: relative;
+    display: inline-block;
+    font-family: GothamHTF-Light;
+    font-size: 1.238em;
+    color: $white;
+    margin: 0 30px 0 0;
+    text-shadow: 1px 1px $black;
+    span {
+      font-family: GothamHTF-Medium;
+      font-size: 0.7em;
+      background-color: rgba(255, 255, 255, 0.3);
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      padding: 0;
+      line-height: 20px;
+      margin: 0 14px 0 0;
+      vertical-align: middle;
+      @include borderRadius(10px);
+      text-shadow: none;
+    }
+    &.active {
+      color: $green;
+      font-family: GothamHTF-Medium;
+      span {
+        background-color: rgba($green, 1);
+        color: $white;
+      }
+      &:after {
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 12px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 16px solid $white;
+        position: absolute;
+        bottom: -30px;
+        left: 45%;
+      }
+    }
+  }
+
+}
+
+//trip summery bar
+.trip-summery-bar {
+  font-size: 1.250em;
+  margin: 15px 0 15px 0;
+  padding: 0 0 0 31px;
+  .form-group {
+    position: relative;
+    float: left;
+    margin: 0 7px;
+    .form-control {
+      font-family: 'GothamHTF-Book';
+      font-size: 1em;
+      padding: 6px 12px 6px 55px;
+      height: 60px;
+      color: $black;
+      @include borderRadius(3px);
+      @include border(1px, $iron-gray, solid);
+      &.three-digits {
+        width: 112px;
+      }
+      &:active {
+        @include border(2px, $kelly-green, solid);
+        background-color: $alice-blue !important;
+        padding: 5px 11px 5px 54px;
+      }
+      &:focus {
+        @include border(2px, $kelly-green, solid);
+        background-color: $alice-blue !important;
+        padding: 5px 11px 5px 54px;
+        + .icon-shadow {
+          display: none;
+        }
+      }
+
+    }
+    &.no-icon {
+      .form-control {
+      width: 74px;
+      padding: 6px 12px 6px 12px;
+      &:-webkit-input-placeholder {
+        text-align: center;
+      }
+      &::-webkit-input-placeholder {
+        text-align: center;
+      }
+      &:-moz-placeholder {
+        /* Firefox 18- */
+        text-align: center;
+      }
+      &::-moz-placeholder {
+        /* Firefox 19+ */
+        text-align: center;
+      }
+      &:-ms-input-placeholder {
+        text-align: center;
+      }
+      }
+    }
+    &.datepicker-wrap {
+      .form-control{
+        width: 158px;
+      }
+    }
+    &.flight-type-wrap{
+      .form-control{
+        width: 257px;
+      }
+    }
+    &.trip-arrow {
+      display: inline-block;
+      position: relative;
+      width: 36px;
+      height: 60px;
+      margin: 0;
+      .icon {
+        width: 40px;
+        height: 40px;
+        @include verticle-center;
+      }
+    }
+  }
+}
+//gray line
+.gray-line{
+  @include border(1px 0 0 0,$gainsboro-gray,solid);
+  position:absolute;
+  left: 0;
+  right: 0;
+}
+
+//filter options
+.filter-options-wrapper{
+  margin: 16px 0 0 0;
+  padding: 0 0 0 0px;
+  &:after{
+    clear: both;
+    display: table;
+    content: " ";
+  }
+  > div {
+    display: inline-block;
+    vertical-align: top;
+    float: left;
+  }
+  .sorting-options{
+  ul {
+    margin: 0;
+    padding: 0;
+   @include border(1px,$iron-gray,solid);
+   @include borderRadius(4px);
+    overflow: hidden;
+    &:after{
+      clear: both;
+      display: table;
+      content: " ";
+    }
+    li{
+      font-family: GothamHTF-Book;
+      color:$mountain-mist-gray;
+      display: inline-block;
+      float: left;
+      padding: 1px 0;
+      cursor: pointer;
+      &.active{
+        font-family: GothamHTF-Medium;
+        color: $black;
+        background: $frostee-green;
+        span{
+          border: none;
+        }
+      }
+      &:hover{
+        color: $black;
+        background: $frostee-green;
+      }
+      &:last-child{
+        span{
+          border: none;
+        }
+      }
+      span{
+        display: block;
+        padding:11px 12px 10px 12px;
+       @include border(0 1px 0 0,$gainsboro-gray,solid);
+      }
+    }
+  }
+  }
+  //filter btn
+  .filter-options{
+    margin: 0 11px;
+    .btn{
+      &.btn-filter{
+        font-size: 1em;
+        background:transparent  url("../images/icons/filter.svg") no-repeat  100% 0;
+        padding: 8px 20px;
+        min-height: inherit;
+        min-width: inherit;
+        text-transform: capitalize;
+        text-align: left;
+        color:$mountain-mist-gray;
+        @include border(1px,$iron-gray,solid);
+        transition: none;
+      }
+      &:hover{
+        background: $alice-blue url("../images/icons/filter-black.svg") no-repeat  100% 0;
+        color: $black;
+        @include border(1px,$kelly-green,solid);
+        @include box-shadow-outline;
+      }
+      &:after{
+        content: '';
+        padding: 0 20px 0 0px;
+        display: inline-block;
+        float: right;
+        vertical-align: top;
+      }
+    }
+  }
+
+  //value filter
+  .value-filter{
+    > span{
+      display: inline-block;
+      height: 36px;
+      line-height: 36px;
+      vertical-align: middle;
+      color: $mountain-mist-gray;
+      float: left;
+      &.min-val,&.max-val{
+        font-family: GothamHTF-Light;
+        font-size: 1.2em;
+      }
+      &.filter-title{
+        color: $black;
+        margin: 0 31px 0 0;
+      }
+    }
+  img{
+    vertical-align: middle;
+    display: inline-block;
+  }
+  }
+
+  //result-count
+  .result-count{
+    margin: 4px 0px 4px 18px;
+    padding: 0 0 0 11px;
+    height: 28px;
+    line-height: 30px;
+    vertical-align: middle;
+    font-size: 0.7em;
+    @include border(0 0 0 1px,$iron-gray,solid);
+    strong{
+      font-size: 1.6em;
+    }
+  }
+}
+
+//flight-list-container table
+
+.flight-list-container{
+
+  table{
+    margin: 14px 0 0 0;
+    tr{
+       td{
+         padding: 21px 0px;
+       }
+      &:nth-child(even){
+        td{
+          background: $alice-blue;
+        }
+      }
+    }
+  }
+  .flight-container {
+    &:after{
+      clear: both;
+      display: table;
+      content: " ";
+    }
+  .flight-name,.flight-details{
+    display: inline-block;
+    float: left;
+  }
+  .flight-name{
+    font-family: GothamHTF-Light;
+    font-size:1.7em;
+    width: 250px;
+    img{
+      margin: 6px 2px 0 0;
+      float: left;
+    }
+  }
+  .flight-details{
+    font-size:1.6em;
+    width: 500px;
+    float: right;
+
+    .departing-details,.returning-details{
+      span{
+      font-family: GothamHTF-Light;
+      }
+    }
+    .time-destination{
+      > span{
+        float: left;
+      }
+      .icon-nonstop,.icon-stop{
+        margin: 0 5px;
+      }
+    }
+    .date-type{
+      font-family: GothamHTF-Book;
+      font-size: 0.69em;
+      color: $mountain-mist-gray;
+      margin: 2px 0 0 0;
+      > span{
+        float: left;
+      }
+      .flight-date{
+        margin: 0 5px 0 40px;
+      }
+      .flight-duration{
+        margin: 0 5px 0 0;
+      }
+      .flight-transit-type{
+        margin: 0 12px 0 5px;
+      }
+      .toggle-icon{
+        cursor: pointer;
+        height: 20px;
+        background-size: 40px;
+        background-position: center;
+        float: right;
+      }
+    }
+  }
+  }
+}

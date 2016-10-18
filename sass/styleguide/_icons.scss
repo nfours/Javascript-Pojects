@@ -1,0 +1,85 @@
+// _icons.scss
+.icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  &.icon-small {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+    @include verticle-center;
+  }
+  &.icon-big {
+    width: 50px;
+
+  }
+  &.icon-left {
+    left: 0;
+  }
+  &.icon-right {
+    right: 1px;
+  }
+  &.icon-flights-from {
+    background: url("../images/icons/flight-from.svg");
+  }
+  &.icon-destination {
+    background: url("../images/icons/destination.svg");
+  }
+  &.icon-flights-to {
+    background: url("../images/icons/flight-to.svg");
+  }
+  &.icon-flights-depart {
+    background: url("../images/icons/flight-depart.svg");
+
+  }
+  &.icon-flights-return {
+    background: url("../images/icons/flight-return.svg");
+  }
+  &.icon-flights-Adult {
+    background: url("../images/icons/flight-adult.svg");
+  }
+  &.icon-user {
+    background: url("../images/icons/user.svg");
+  }
+  &.icon-arrow-down {
+    background: url("../images/icons/dropdown-arrow.svg");
+  }
+  &.icon-trip-arrow-left {
+    background: url("../images/icons/trip-arrow-left.svg");
+  }
+  &.icon-ypoints {
+    background: url("../images/icons/y-icon.svg");
+  }
+  &.icon-check-right {
+    @include border(1px, $iron-gray, solid);
+    @include borderRadius(30px);
+    display: inline-block;
+    color: $white;
+    text-align: center;
+  }
+  &.icon-close {
+    background: url("../images/icons/close.svg");
+  }
+  &.icon-landing {
+    background: url("../images/icons/flight-landing.svg");
+  }
+  &.icon-takeoff {
+    background: url("../images/icons/flight-takeoff.svg");
+  }
+  &.icon-ypoints-sm{
+    background: url("../images/icons/y-heart.svg");
+  }
+  &.icon-nonstop{
+    background: url("../images/icons/50x40/nonstop.svg");
+}
+  &.icon-stop{
+    background: url("../images/icons/50x40/stop.svg");
+  }
+  &.icon-shadow {
+    background-color: white;
+    -webkit-box-shadow: -10px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    -moz-box-shadow: -10px 0px 5px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: -10px 0px 5px 0px rgba(255, 255, 255, 0.5);
+  }
+}

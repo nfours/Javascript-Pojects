@@ -1,0 +1,65 @@
+// travelers-selector-mobile.scss
+.dropDown-wrapper {
+  box-shadow:none;
+  .dropDown-pannel {
+    background-color: $white;
+    position: fixed;
+    top: 2px;
+    left: 0;
+    bottom: 0;
+    padding: 45px 0 50px 0;
+    @include borderRadius(0);
+    &:before,&:after{
+      border: none;
+    }
+    .controll-panel {
+      padding: 0px 10px 10px 5px;
+      .row {
+        margin-bottom: 2px;
+        .label {
+          padding: 15px 0 15px 0;
+          .caption {
+            font-size: 18px;
+          }
+        }
+        .dd-row-wrapper {
+          .txt {
+            input {
+              width: 75px;
+              min-height: 40px;
+              margin: 5px 0 5px 0;
+            }
+          }
+          .btn {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+    }
+    .dd-label {
+      width: 45%;
+      font-size: 20px;
+      padding: 20px 10px 10px 10px;
+    }
+    .dd-btn-Warpper {
+      display: none;
+    }
+    .dd-option-wrapper {
+      padding: 0px 15px 10px 10px;
+      .ui-selectmenu-button {
+        width: 60% !important;
+        &:focus, &:active {
+          .ui-selectmenu-text {
+            padding: 7px 33px 3px 9px;
+          }
+        }
+        .ui-selectmenu-text {
+          font-size: 19px;
+          padding: 8px 34px 4px 10px;
+
+        }
+      }
+    }
+  }
+}

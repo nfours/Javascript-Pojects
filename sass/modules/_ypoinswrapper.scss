@@ -1,0 +1,33 @@
+// _ypointswrapper.scss
+.ypoints-wrapper{
+  display: table;
+  position: relative;
+  bottom: 130px;
+  z-index: 1;
+  margin: 0 auto;
+  font-family: GothamHTF-Light;
+  font-size: 34px;
+  border: 1px solid $kelly-green;
+  padding: 30px 25px 30px 25px;
+  border-radius: 6px;
+  p {
+    display: inline-block;
+  }
+.btn-default{
+  font-family: GothamHTF-Medium;
+  font-size: 24px;
+  min-width: inherit;
+  min-height: inherit;
+  @include primary-button($kelly-green,$white,$lime-green);
+  padding: 12px 25px;
+  margin-right: 10px;
+}
+  .icon-ypoints{
+    vertical-align: text-bottom;
+  }
+  .ypoints{
+    color: $kelly-green;
+    font-weight: $bold;
+  }
+}
+

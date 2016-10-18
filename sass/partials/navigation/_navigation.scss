@@ -1,0 +1,75 @@
+// _navigation.scss
+nav {
+  width: 300px;
+  position: absolute;
+  display: none;
+  overflow: hidden;
+  min-height: 100%;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  -moz-transition: left .3s;
+  -o-transition: left .3s;
+  -webkit-transition: left .3s;
+  transition: left .3s;
+  z-index: 6;
+
+  &.panel{
+    background:$mineshaft-brown;
+    border:none;
+    border-radius: 0;
+    margin: 0;
+  }
+  &.open {
+    display: block;
+  }
+}
+
+
+.panel-left {
+  font-family: GothamHTF-Light;
+  float: left;
+  width: 100%;
+  h2 {
+    font-family: GothamHTF-Medium;
+    border-bottom: 1px solid #444;
+    color:$white;
+    font-size:18px;
+    font-weight:$bold;
+    margin-bottom: 0;
+    padding: 17px;
+  }
+  .panel-menu {
+
+    li {
+      border-bottom: 1px solid #444;
+      font-size: 18px;
+
+      padding: 17px;
+      a{
+       display: block;
+       width: 100%;
+       color: $white;
+        font-weight: 200;
+      }
+
+    }
+  }
+.social-links {
+  li {
+
+      padding: 5px 17px;
+    a {
+      display: block;
+      width: 100%;
+      color: $gainsboro-gray;
+      font-weight: 200;
+    }
+
+  }
+
+}
+}
+
+
+

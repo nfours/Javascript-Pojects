@@ -1,0 +1,52 @@
+// auto-suggestion.scss
+.auto-sugession-wrapper {
+  position: relative;
+  .auto-sug-drop {
+    background-color: $desert-storm-light-gray !important;
+    width: 100%;
+    ul {
+      width: 100%;
+      padding: 0 5px 10px 5px;
+      @include box-shadow;
+      @include borderRadius(5px);
+      &:after,
+      &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        margin-left: 12px;
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-bottom: 20px solid $desert-storm-light-gray;
+        position: absolute;
+        top: -15px;
+      }
+      li {
+        &:first-child {
+          margin-top: 5px;
+        }
+        &:after {
+          width: 96%;
+          content: "";
+          @include border(0 0 1px 0, $gainsboro-gray, solid);
+          display: block;
+          margin: 0px auto;
+        }
+        label {
+          width: 100%;
+          color: $black;
+          font-family: 'GothamHTF-Book';
+          margin-bottom: 5px;
+          margin-top: 5px;
+          &:hover,
+          &:focus {
+            background-color: $peppermint-green;
+          }
+        }
+      }
+    }
+  }
+}
+
+

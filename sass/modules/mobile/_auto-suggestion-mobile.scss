@@ -1,0 +1,23 @@
+// auto-suggestion-mobile.scss
+.auto-sugession-wrapper {
+  .auto-sug-drop {
+    ul {
+      width: 100% !important;
+      background-color: $white;
+      left: 0 !important;
+      top:0 !important;
+      border-radius: 0;
+      padding: 45px 0 50px 0;
+      position: fixed;
+      max-height: 100%;
+      overflow-y: auto;
+      height: 100%;
+      li {
+        label {
+          padding: 5px 10px 5px 10px;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
