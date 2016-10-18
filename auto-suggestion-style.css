@@ -1,0 +1,87 @@
+.auto-sugession-wrapper input {
+  float: left; }
+
+.auto-sugession-wrapper .auto-sug-drop {
+  position: absolute;
+  z-index: 100;
+  margin: 34px; }
+
+.auto-sugession-wrapper .auto-sug-drop ul {
+  margin: 0px;
+  padding: 0px;
+  width: 162px;
+  max-height: 280px;
+  overflow-y: scroll; }
+  .auto-sugession-wrapper .auto-sug-drop ul li {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    cursor: pointer; }
+
+.auto-sugession-wrapper .flights-from-icon {
+  position: absolute;
+  display: block;
+  float: left; }
+
+.auto-sugession-wrapper .flights-to-icon {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  display: block;
+  float: left; }
+
+.dropDown-wrapper .btn {
+  width: 34px;
+  height: 34px;
+  position: relative;
+  display: block;
+  float: right; }
+
+.dropDown-wrapper .dropDown-pannel {
+  position: absolute;
+  z-index: 100; }
+  .dropDown-wrapper .dropDown-pannel .row {
+    margin: 0px; }
+  .dropDown-wrapper .dropDown-pannel ul li div {
+    float: left; }
+  .dropDown-wrapper .dropDown-pannel input {
+    width: 50px;
+    margin: 5px;
+    color: #000; }
+  .dropDown-wrapper .dropDown-pannel select {
+    width: 100%;
+    margin: 5px; }
+  .dropDown-wrapper .dropDown-pannel .dd-btn-Warpper {
+    width: 100%;
+    height: 50px;
+    background-color: #000066;
+    color: #000011; }
+    .dropDown-wrapper .dropDown-pannel .dd-btn-Warpper .btn-cancel, .dropDown-wrapper .dropDown-pannel .dd-btn-Warpper .btn-ok {
+      width: 75px;
+      height: 40px;
+      display: inline-block;
+      margin: 5px; }
+    .dropDown-wrapper .dropDown-pannel .dd-btn-Warpper .btn-cancel {
+      background-color: #FFFFFF; }
+    .dropDown-wrapper .dropDown-pannel .dd-btn-Warpper .btn-ok {
+      background-color: #00ff00;
+      float: right; }
+  .dropDown-wrapper .dropDown-pannel .controll-panel .row .caption {
+    min-width: 70px;
+    color: #000;
+    text-align: left;
+    padding: 2px;
+    margin: 0px;
+    font-size: 15px; }
+  .dropDown-wrapper .dropDown-pannel .controll-panel .row .btn {
+    width: 34px;
+    height: 34px;
+    background-color: #00ff00;
+    position: relative;
+    display: block;
+    margin: 5px; }
+
+ul.ui-menu {
+  max-height: 120px !important; }
+
+/*# sourceMappingURL=auto-suggestion-style.css.map */
