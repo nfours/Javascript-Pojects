@@ -1,0 +1,105 @@
+.auto-sugession-wrapper {
+  input{float:left;}
+  .auto-sug-drop {
+    position: absolute;
+    z-index: 100;
+    margin: 34px;
+
+  }
+  .auto-sug-drop ul {
+    margin: 0px;
+    padding: 0px;
+    width: 162px;
+    max-height: 280px;
+    overflow-y: scroll;
+    li {
+      list-style: none;
+      padding: 0px;
+      margin: 0px;
+      cursor: pointer;
+    }
+  }
+  .flights-from-icon {
+    position: absolute;
+    display: block;
+    float: left;
+  }
+  .flights-to-icon {
+    width: 34px;
+    height: 34px;
+    position: absolute;
+    display: block;
+    float: left;
+  }
+}
+.dropDown-wrapper{
+  .btn {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    display: block;
+    float: right;
+  }
+
+  .dropDown-pannel {
+    position: absolute;
+    z-index: 100;
+    .row{
+      margin: 0px;
+    }
+    ul li div{
+      float: left;
+    }
+    input {
+      width: 50px;
+      margin: 5px;
+      color: #000;
+    }
+    select{
+      width:100%;
+      margin: 5px;
+    }
+    .dd-btn-Warpper{
+      width:100%;
+      height: 50px;
+      background-color: #000066;
+      color: #000011;
+      .btn-cancel,.btn-ok{
+        width:75px;
+        height: 40px;
+        display: inline-block;
+        margin: 5px;
+      }
+      .btn-cancel{
+        background-color: #FFFFFF;
+
+      }
+      .btn-ok{
+        background-color: #00ff00;
+        float: right;
+      }
+    }
+    .controll-panel {
+      .row {
+        .caption{
+          min-width: 70px;
+          color:#000;
+          text-align: left;
+          padding: 2px;
+          margin: 0px;
+          font-size: 15px;
+        }
+        .btn {
+          width: 34px;
+          height: 34px;
+          background-color: #00ff00;
+          position: relative;
+          display: block;
+          margin: 5px;
+
+        }
+      }
+    }
+  }
+}
+ul.ui-menu { max-height: 120px !important; }
