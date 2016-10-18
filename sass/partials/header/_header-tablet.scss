@@ -1,0 +1,33 @@
+// _header-tablet.scss
+body {
+  &.home-page {
+    header {
+      margin-top: 10px;
+      margin-bottom: 88px;
+      .logo {
+        padding-left: 10px;
+        .yatango-travel-logo {
+          width: 70%;
+          margin-top: 0px;
+        }
+      }
+      .nav-list {
+        padding-right: 5px;
+        button {
+          &.user-login {
+            padding: 0;
+            width: 40px;
+            span {
+              display: none;
+              &.icon.icon-user {
+                display: block;
+                margin: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,35 @@
+// travelers-selector.scss
+.dropDown-wrapper {
+  .dropDown-pannel {
+    width: 125%;
+    input {
+      width: 55px;
+    }
+    .dd-option-wrapper {
+      padding: 2px 5px 8px 10px;
+      .dd-label {
+        font-size: 0.938em;
+        padding: 17px 10px 0 0;
+      }
+    }
+    .controll-panel {
+      padding: 0 5px 0px 5px;
+      .row {
+        margin-bottom: 5px;
+        .label {
+          font-size: 100%;
+          .caption {
+            font-size: 0.938em;
+          }
+        }
+        .dd-row-wrapper {
+          .btn {
+            width: 30px;
+            height: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+

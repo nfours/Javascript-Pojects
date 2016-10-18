@@ -1,0 +1,181 @@
+// _form.scss
+
+// placeholder
+::-webkit-input-placeholder {
+  color: $gray;
+  font-family: 'GothamHTF-Book';
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: $gray;
+  font-family: 'GothamHTF-Book';
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $gray;
+  font-family: 'GothamHTF-Book';
+}
+
+:-ms-input-placeholder {
+  color: $gray;
+  font-family: 'GothamHTF-Book';
+}
+
+.form-container {
+  .tab-content {
+    background-color: $white;
+    @include borderRadius(0 0 5px 5px);
+    .tab-pane {
+      .travel-method {
+        margin: 0px auto;
+        display: table;
+        list-style: none;
+        li {
+          text-align: center;
+          color: $heavy-metal-black;
+          margin-right: 0;
+          float: left;
+          a {
+            text-align: center;
+            color: $heavy-metal-black;
+            text-decoration: none;
+            font-family: 'GothamHTF-Light';
+          }
+          &.active {
+            @include border(0 0 2px 0, #00c700, solid);
+            a {
+              color: $kelly-green;
+              font-family: 'GothamHTF-Medium';
+            }
+          }
+          &:hover {
+            @include border(0 0 2px 0, #00c700, solid);
+            a {
+              text-decoration: none;
+              color: $kelly-green;
+              font-family: 'GothamHTF-Medium';
+            }
+          }
+        }
+      }
+      .form-inline {
+        .hotel-field-section {
+          display: none;
+          margin-top: 15px;
+          float: left;
+        }
+        .flight-occurence-title {
+          font-family: 'GothamHTF-Medium';
+          padding-left: 20px;
+          color: $cerulean-blue;
+          margin-top: 43px;
+          margin-bottom: 18px;
+          font-size: 18px;
+          &.inactive {
+            display: none;
+          }
+          &.active {
+            display: block;
+          }
+        }
+        .hotel-block-header {
+          font-family: 'GothamHTF-Light';
+          font-size: 16px;
+          color: $black;
+          padding: 0px 15px 30px 15px;
+        }
+        .form-block {
+          width: 100%;
+          float: left;
+          &.hotel-part-block {
+            .hotel-block-header {
+              font-size: 0.938em;
+              color: $heavy-metal-black;
+              padding: 0px 15px 15px 15px;
+            }
+
+          }
+          .form-group {
+            width: 100%;
+            position: relative;
+
+            &.add-hotel {
+              margin-top: 10px;
+              input[type="checkbox"] {
+                display: none;
+              }
+              label {
+                span {
+                  margin: 0 20px 0 0;
+                  &.inactive {
+                    background-color: transparent;
+                  }
+                  &.active {
+                    display: none;
+                  }
+                }
+                p {
+                  font-family: 'GothamHTF-Book';
+                  color: $taupe-gray;
+                  margin-top: 5px;
+                  margin-left: 36px;
+                }
+              }
+              input:checked + label {
+                span {
+                  &.active {
+                    background: url("../images/icons/right.svg") $kelly-green;
+                    display: inline-block;
+                    background-size: 40px;
+                    background-position: -10px;
+                  }
+                  &.inactive {
+                    display: none;
+                  }
+                }
+
+              }
+              .icon-check-right {
+                margin-left: 0px;
+              }
+            }
+            .form-control {
+              width: 100%;
+              padding: 6px 12px 6px 55px;
+              &:active {
+                padding: 5px 11px 5px 54px;
+              }
+              &:focus {
+                padding: 5px 11px 5px 54px;
+                + .icon-shadow {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+//common input
+.form-control {
+  @include borderRadius(3px);
+  font-family: 'GothamHTF-Book';
+  color: $black;
+  @include border(1px, $iron-gray, solid);
+
+  &:active {
+    @include border(2px, $kelly-green, solid);
+    background-color: $alice-blue !important;
+
+  }
+  &:focus {
+    @include border(2px, $kelly-green, solid);
+    background-color: $alice-blue !important;
+
+  }
+}

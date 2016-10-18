@@ -1,0 +1,16 @@
+body {
+  &.home-page {
+    background-image: url("../images/home-banner.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: $white;
+    overflow-x: hidden;
+    }
+}
+.home-tabs {
+  #home-tabs,.tab-content{
+  position: relative;
+  z-index: 2;
+  }
+}

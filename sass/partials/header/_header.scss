@@ -1,0 +1,68 @@
+// _header.scss
+header {
+  .logo {
+    padding-left: 5px;
+    a{
+        display: inline-block;
+    }
+  }
+  button {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid $white;
+    @include borderRadius(7px);
+    vertical-align: top;
+    &.user-login {
+      font-family: GothamHTF-Light;
+      font-size: 17px;
+      height: 40px;
+      line-height: 38px;
+      padding: 0 0 0 11px;
+      span {
+        &.icon.icon-user{
+        float: right;
+        background-position:1px -2px;
+        margin: 0 0 0 -4px;
+        }
+      }
+    }
+    &.menu-toggle {
+      padding: 10px 9px 5px 10px;
+      margin: 0 5px 0 9px;
+      .icon-bar {
+        display: block;
+        background: $white;
+        height: 4px;
+        width: 20px;
+        @include borderRadius(5px);
+        margin: 0 0 4px 0;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+}
+.pushed{
+  header{
+    button {
+      &.menu-toggle{
+        border: 1px solid $green;
+      }
+      &.menu-toggle {
+        .icon-bar {
+          background: $green;
+        }
+      }
+    }
+  }
+}
+
+body {
+    &.home-page {
+        header{
+            margin-top: 21px;
+            margin-bottom: 78px;
+        }
+    }
+}

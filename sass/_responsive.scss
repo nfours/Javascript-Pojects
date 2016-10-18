@@ -1,0 +1,618 @@
+// _responsive.scss
+//desktop view -----large screen
+@media (min-width: 1920px) {
+  .home-page {
+    .content-wrapper {
+       height: 940px;
+       overflow: hidden;
+    }
+  }
+  .container {
+    max-width: 1170px;
+    .page-titles {
+      h1 {
+        font-size: 90px;
+        span {
+          font-size: 34px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .form-container {
+      margin-top: 90px;
+      margin-bottom: 20px;
+      &.home-tabs {
+        height: 480px;
+        overflow: visible;
+      }
+      .nav-tabs {
+        li {
+          a {
+            padding: 25px 0 12px 0;
+            span {
+              font-size: 34px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .travel-method {
+            padding-top: 35px;
+            padding-left: 0;
+            li {
+              font-size: 16px;
+              min-width: 117px;
+              padding-bottom: 5px;
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+          .form-inline {
+            margin: 30px 60px 30px 60px;
+            padding-bottom: 40px;
+            .form-block {
+              margin-bottom: 30px;
+              float: left;
+              &:last-child {
+                margin-bottom: 30px;
+              }
+              &.form-action {
+                margin-bottom: 5px;
+              }
+              .form-group {
+                &.add-hotel {
+                  label {
+                    font-size: 17px;
+                    margin-left: 0;
+                  }
+                  input:checked + label {
+                    span {
+                      &.active {
+                        background-size: 50px;
+                        background-position: -12px;
+                      }
+                    }
+
+                  }
+                }
+                .icon {
+                  &.icon-check-right {
+                    width: 30px;
+                    height: 30px;
+                    font-size: 30px;
+                  }
+                }
+                .form-control {
+                  font-size: 24px;
+                  &.lg-width {
+                    min-height: 70px;
+                  }
+                  &.md-width {
+                    min-height: 60px;
+                  }
+                }
+              }
+              .btn {
+                &.btn-primary {
+                  font-size: 24px;
+                  min-width: 325px;
+                  min-height: 60px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ypoints-wrapper {
+      bottom: -55px;
+    }
+  }
+}
+//desktop view
+@media (min-width: 1025px) and (max-width: 1919px){
+  @import "partials/header/header-desktop";
+  @import "modules/grid-960/travelers-selector";
+  @import "modules/grid-960/datepicker";
+  @import "modules/grid-960/auto-suggestion";
+  .home-page {
+    .content-wrapper {
+      height: 585px;
+      overflow: visible;
+    }
+  }
+  .container {
+    max-width: 960px;
+    .page-titles {
+      h1 {
+        font-size: 64px;
+        span {
+          font-size: 34px;
+          padding-bottom: 14px;
+        }
+      }
+    }
+    .form-container {
+      &.home-tabs {
+        height: 300px;
+        overflow: visible;
+        margin: 33px 0 20px 0;
+      }
+      .nav-tabs {
+        li {
+          a {
+            padding: 8px 0 10px 0;
+            span {
+              font-size: 24px;
+            }
+          }
+        }
+      }
+      .tab-content {
+        .tab-pane {
+          .travel-method {
+            padding-top: 13px;
+            padding-left: 0;
+            li {
+              font-size: 16px;
+              min-width: 117px;
+              padding-bottom: 5px;
+              a {
+                font-size: 16px;
+              }
+            }
+          }
+          .form-inline {
+            margin: 15px 30px 15px 30px;
+            padding-bottom: 25px;
+            .form-block {
+              margin-bottom: 15px;
+              float: left;
+              &.form-action {
+                margin-bottom: 5px;
+              }
+              .form-group {
+                &.add-hotel {
+                  label {
+                    font-size: 0.938em;
+                  }
+                }
+                .icon {
+                  &.icon-check-right {
+                    width: 25px;
+                    height: 25px;
+                    font-size: 30px;
+                  }
+                  &.icon-shadow {
+                    width: 30px;
+                    height: 30px;
+                  }
+                }
+                .form-control {
+                  font-size: 24px;
+                  &.lg-width {
+                    min-height: 50px;
+                  }
+                  &.md-width {
+                    min-height: 40px;
+                  }
+                }
+              }
+              .btn {
+                &.btn-primary {
+                  font-size: 20px;
+                  min-width: 215px;
+                  min-height: 34px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ypoints-wrapper {
+      bottom: -10px;
+      padding: 15px;
+      p {
+        font-size: 22px;
+      }
+      .icon {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    .form-group {
+      &.add-hotel {
+
+      }
+      &.auto-sugession-wrapper {
+        .auto-sug-drop {
+          margin: 60px 0 0 0;
+          ul {
+            li {
+              label {
+                padding: 10px 10px 10px 10px;
+                font-size: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  // placeholder
+  ::-webkit-input-placeholder {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 20px;
+    padding-top: 5px;
+  }
+
+}
+
+//Tablet view
+@media (min-width: 768px) and (max-width: 1024px) {
+  @import "partials/header/header-tablet";
+  @import "modules/tab/travelers-selector";
+  @import "modules/grid-960/datepicker";
+  @import "modules/grid-960/auto-suggestion";
+  .page-titles {
+    h1 {
+      font-size: 58px;
+      span {
+        font-size: 21px;
+        padding-top: 12px;
+        padding-bottom: 25px;
+      }
+    }
+  }
+  .form-container {
+    margin-top: 50px;
+    margin-bottom: 20px;
+    .nav-tabs {
+      li {
+        a {
+          padding: 15px 0 10px 0;
+          span {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .travel-method {
+          padding-top: 15px;
+          li {
+            min-width: 75px;
+            padding-bottom: 6px;
+            &:nth-child(2) {
+              padding-left: 18px;
+              padding-right: 18px;
+            }
+            a {
+              font-size: 14px;
+            }
+          }
+        }
+        .form-inline {
+          margin: 20px 45px 20px 45px;
+          padding-bottom: 15px;
+          .flight-occurence-title {
+            font-size: 14px;
+            margin-top: 0px;
+          }
+          .form-block {
+            margin-bottom: 10px;
+            float: left;
+            &.form-action {
+                margin-top: 0;
+                margin-bottom: 5px;
+            }
+            .form-group {
+              margin-bottom: 10px;
+              &.add-hotel {
+                label {
+                  font-size: 11px;
+                }
+              }
+              .icon {
+                &.icon-check-right {
+                  width: 22px;
+                  height: 22px;
+                  font-size: 22px;
+                }
+              }
+              .form-control {
+                font-size: 24px;
+                width: 100%;
+                padding-left: 55px;
+                &.lg-width {
+                  min-height: 60px;
+                }
+                &.md-width {
+                  min-height: 50px;
+                }
+              }
+            }
+            .btn {
+              &.btn-primary {
+                font-size: 20px;
+                min-width: 210px;
+                min-height: 45px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .ypoints-wrapper{
+    bottom: -30px;
+    margin: 0px 0 0 60px;
+    padding: 15px 8px 15px 18px;
+    font-size: 22px;
+    p {
+      font-size: 21px;
+    }
+    .btn-default {
+      font-size: 20px;
+      padding: 8px 12px;
+      margin-right: 6px;
+    }
+    .icon-ypoints {
+      width: 25px;
+      height: 25px;
+    }
+  }
+  //traveler selector tablet view
+  .dropDown-wrapper {
+    .dropDown-pannel {
+      .controll-panel {
+        .row {
+          .dd-row-wrapper {
+            .btn {
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+//Mobile view
+@media (max-width: 767px) {
+  @import "partials/header/header-mobile";
+  @import "partials/navigation/navigation-mobile";
+  @import "modules/mobile/travelers-selector-mobile";
+  @import "modules/mobile/auto-suggestion-mobile";
+  @import "modules/mobile/datepicker-mobile";
+  @import "modules/mobile/common-component";
+    .gradient-bar {
+        height: 2px;
+    }
+  .page-titles {
+    h1 {
+      font-size: 36px;
+      span {
+        font-size: 14px;
+      }
+    }
+  }
+  .form-container {
+    margin: 15px 5px 20px 5px;
+    .nav-tabs {
+      li {
+        padding-right: 0;
+        a {
+          padding: 3px 0 3px 0;
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+    .tab-content {
+      .tab-pane {
+        .form-inline {
+          margin: 10px 27px 10px 27px;
+          &.form-return {
+            .form-block {
+              .add-hotel-block {
+                float: right;
+                .add-hotel {
+                  position: absolute;
+                }
+              }
+            }
+          }
+          .hotel-block-header {
+            font-size: 12px;
+            padding: 15px 15px 15px 15px;
+          }
+          &.form-oneway {
+            .form-block {
+              .add-hotel-block {
+                width: 100%;
+              }
+            }
+          }
+          .flight-occurence-title {
+            font-size: 14px;
+            margin-top: 0px;
+          }
+          .form-block {
+            .add-hotel-block {
+              float: left;
+              margin-bottom: 15px;
+              .add-hotel {
+                position: relative;
+                left: 15px;
+                label {
+                  font-size: 11px;
+                  margin-left: 9px;
+                  margin-top: 0;
+                  p {
+                    margin-left: 15px;
+                  }
+                }
+              }
+            }
+            .form-group {
+              float: left;
+              margin-bottom: 0;
+              &.md-width {
+                min-height: 60px;
+              }
+              .icon {
+                &.icon-small {
+                  width: 20px;
+                  height: 20px;
+                  margin-left: 3px;
+                  margin-top: -7px;
+                  padding-left: 5px;
+                  &.icon-check-right {
+                    margin-left: -14px;
+                    margin-top: 0px;
+                    padding-left: 0px;
+                    font-size: 20px;
+                  }
+                }
+              }
+              .form-control {
+                height: 30px;
+                font-size: 12px;
+                margin-bottom: 12px;
+                padding-left: 26px;
+                &:focus,&:active {
+                  padding: 5px 11px 5px 25px;
+                }
+              }
+            }
+            .btn-primary {
+              width: 100%;
+              font-size: 24px;
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .travel-method {
+          padding-top: 5px;
+          li {
+            min-width: 60px;
+            padding-bottom: 5px;
+            &:nth-child(2) {
+              padding-left: 30px;
+              padding-right: 30px;
+            }
+            &.active {
+              padding-bottom: 5px;
+            }
+            a {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ypoints-wrapper {
+    display: none;
+  }
+  // placeholder
+  ::-webkit-input-placeholder {
+    font-size: 12px;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    font-size: 12px;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    font-size: 12px;
+  }
+
+  :-ms-input-placeholder {
+    font-size: 12px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .tab-content {
+    .tab-pane {
+      .form-inline {
+        &.form-return {
+          .form-block {
+            .add-hotel-block {
+              .add-hotel {
+                top: -38px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  //error message list
+  .messages {
+    .content {
+      background-size: 20px !important;
+      background-position: 4px 4px !important;
+      padding: 10px 5px 10px 30px;
+      margin: 0px;
+      h3 {
+        font-size: 10px;
+      }
+      ul {
+        li {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .tab-content {
+    .tab-pane {
+      .form-inline {
+        &.form-return {
+          .form-block {
+            .add-hotel-block {
+              .add-hotel {
+                top: -55px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (min-width: 320px) {
+  .container {
+    width: auto;
+  }
+}

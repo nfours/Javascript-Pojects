@@ -1,0 +1,59 @@
+// _mixin.scss
+@mixin primary-button($color, $textcolor,$hoverbg) {
+  color: $textcolor;
+  background: $color;
+  &:hover {
+    background: $hoverbg;
+  }
+  &:active {
+    background: $hoverbg;
+  }
+}
+@mixin secondry-button($color, $text_color,$hoverbg,$hovercolor) {
+  color: $text_color;
+  background: $color;
+  &:hover {
+    background: $hoverbg;
+    color: $hovercolor;
+  }
+  &:active {
+    background: $hoverbg;
+    color: $hovercolor;
+  }
+}
+@mixin borderRadius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin border($width,$color,$style) {
+  border-style: $style;
+  border-color: $color;
+  border-width: $width;
+}
+
+@mixin verticle-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: 0px 0px 15px 2px rgba(197, 197, 197, 1);
+  -moz-box-shadow: 0px 0px 15px 2px rgba(197, 197, 197, 1);
+  box-shadow: 0px 0px 15px 2px rgba(197, 197, 197, 1);
+}
+@mixin box-shadow-outline
+{
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(33,196,5,.3);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(33,196,5,.3);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 5px rgba(33,196,5,.3);
+}
+@mixin inline-flex {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}

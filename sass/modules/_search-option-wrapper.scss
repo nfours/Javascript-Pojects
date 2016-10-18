@@ -1,0 +1,91 @@
+
+.option-container {
+  font-family: GothamHTF-Light;
+  width: 900px;
+  position: relative;
+  display: none;
+  padding: 0;
+  background-color: $white;
+  border: 1px solid $gainsboro-gray-lighter;
+  @include borderRadius(0 0 5px 5px);
+  &:after,
+  &:before {
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid $white;
+    top: -6px;
+    content: '';
+    left: 17.5%;
+    margin-left: -6px;
+    position: absolute;
+  }
+  /* Styling for second triangle (border) */
+  &:before {
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 8px solid;
+    border-bottom-color: inherit; /* Can't be included in the shorthand to work */
+    top: -8px;
+    margin-left: -8px;
+  }
+  .filter-container {
+    padding: 12px 2px;
+    h3 {
+      font-family: GothamHTF-Medium;
+      font-size: 0.875em;
+      margin: 0 0 17px 0;
+    }
+    .two-col {
+      .checkbox, .radio {
+        width: 50%;
+        display: inline-block;
+        vertical-align: bottom;
+        float: left;
+      }
+    }
+    .checkbox, .radio {
+      margin: 0 0 10px 0;
+      input[type='checkbox'], input[type='radio'] {
+        display: none;
+      }
+    }
+      label {
+        text-transform: capitalize;
+        font-size: 0.875em;
+        line-height: 22px;
+        vertical-align: top;
+        span {
+          display: inline-block;
+          float: left;
+          width: 20px;
+          height: 19px;
+          margin: 2px 10px 0 0;
+          border: 1px solid $gainsboro-gray-lighter;
+          @include borderRadius(5px);
+        }
+      }
+      input:checked + label {
+        font-family: GothamHTF-Medium;
+        span {
+          background: url("../images/icons/tick.svg") no-repeat center;
+          background-size: 40px;
+        }
+      }
+    }
+    // filter-footer
+    .filter-footer {
+      background: $black-haze;
+      padding: 10px 0;
+      @include borderRadius(0 0 5px 5px);
+      //reset btn
+      button[type='reset'] {
+        font-family: GothamHTF-Light;
+        font-size: 0.875em;
+        background: none;
+        border: none;
+        text-decoration: underline;
+      }
+    }
+
+  }
+

@@ -1,0 +1,28 @@
+.ui-selectmenu-menu {
+  .ui-menu {
+    li {
+      &:first-child {
+        margin-top: 5px;
+      }
+      width: 96%;
+      content: "";
+      display: block;
+      margin: 5px 5px;
+      padding: 10px;
+      @include border(0 0 1px 0, $gainsboro-gray, solid);
+      font-family: 'GothamHTF-Book';
+      &:hover,
+      &:focus,
+      &:active{
+        background: $peppermint-green;
+      }
+      &.ui-state-focus{
+        background: $peppermint-green;
+      }
+      &:before {
+        content: " ";
+        background-color: #333;
+      }
+    }
+  }
+}

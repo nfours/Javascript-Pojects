@@ -1,0 +1,55 @@
+@import 'styleguide/variable';
+@import 'styleguide/mixin';
+@import 'styleguide/font';
+@import 'styleguide/form';
+@import 'styleguide/icons';
+@import 'styleguide/tab';
+@import 'styleguide/title';
+@import 'styleguide/alert-and-errors';
+@import 'styleguide/search-result';
+body {
+  font-family:GothamHTF-Medium;
+  font-weight: $regular;
+  -webkit-font-smoothing:antialiased;
+  font-size-adjust: 0.5;
+  font-size: 16px !important;
+}
+//gradient bar
+.gradient-bar {
+    height: 1px;
+    width: 100%;
+    background-image: url("../images/rainbow-bar.png");
+    background-repeat: repeat-y;
+    background-size: 100%;
+}
+// link tag
+a,button,input {
+  &:focus,
+  &:hover {
+    outline: none !important;
+  }
+}
+// _btn.scss
+.btn {
+  font-family: GothamHTF-Medium;
+  font-size:1.250em;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  min-height: 50px;
+  min-width: 215px;
+  @include borderRadius(5px);
+  &.btn-primary {
+    @include  primary-button($green,$white,$lime-green);
+  }
+  &.btn-default {
+    @include  secondry-button($white,$green,$lime-green,$white);
+    @include border(1px, #00c700, solid);
+  }
+  &.btn-close {
+    @include primary-button($wild-sand-gray,$green,$lime-green);
+    @include borderRadius(30px);
+  }
+}
+

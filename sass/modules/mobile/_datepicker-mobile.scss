@@ -1,0 +1,29 @@
+// datepicker.scss
+.ui-datepicker {
+  box-shadow:none;
+  &.ui-datepicker-multi-2 {
+    width: 100% !important;
+    background-color: $white;
+    left: 0 !important;
+    top:2px !important;
+    border-radius: 0;
+    padding: 45px 0 50px 0;
+    .ui-datepicker-group{
+      width: 100%;
+    }
+  }
+  &:before,&:after,&.below:before,&.below:after,
+  &.above:before,&.above:after{
+    border: none;
+  }
+  .ui-widget-header {
+    font-size: 20px;
+  }
+  th {
+    font-size: 18px;
+  }
+  .ui-state-default, .ui-widget-content .ui-state-default,
+  .ui-widget-header .ui-state-default {
+    padding: 11px;
+  }
+}
